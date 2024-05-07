@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+block style 
+    style 
+        include ../static/style.css
+
+block content
+    
+    section#introSection 
+        div  Welcome to Ahmad's Dance Academy
+        div.small Eat, Sleep, Dance and Repeat
+        
+    section#missionSection 
+        h2 Our Mission
+        div.card 
+            h3 Dance Perfection 
+            div.card-box
+                div.card-img
+                    img(src="/static/dance5.avif")
+                div.card-content
+                     p this is the best dance academy of universe
+        div.card 
+            h3 Dance the way you like 
+            div.card-box
+                div.card-img
+                    img(src="/static/dance6.webp")
+                div.card-content
+                    p this is the best dance academy of universe
+        div.card 
+            h3 Expert teaching 
+            div.card-box
+                div.card-img
+                    img(src="/static/dance7.jpg")
+                div.card-content
+                    p this is the best dance academy of universe
+        
+    section#sponsorSection 
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/dance2.jpg") 
+            img(src="/static/dance3.webp") 
+            img(src="/static/dance4.png") 
+        
+    
